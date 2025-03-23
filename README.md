@@ -1,53 +1,37 @@
-# 🤖 AI Learning Portfolio - Mr. Bas
+# 🧠 Mr. Bas – AI Portfolio
 
-Welcome to my personal AI and Machine Learning portfolio!  
-This GitHub Pages site showcases my learning journey through hands-on projects, experiments and notes as I grow in the field of Artificial Intelligence.
+Welcome! This site documents my personal journey into Artificial Intelligence, Machine Learning, and Deep Learning.
 
-## 🧠 About Me
+## 👨‍💻 Background
 
-Hi! I'm **Mr. Bas**, a passionate AI enthusiast currently following the [TensorFlow Developer Bootcamp](https://www.zerotomastery.io/) by Zero to Mastery.  
-My focus lies in building real-world machine learning solutions, working with Python, TensorFlow, and Scikit-learn, and learning to deploy models effectively.
-
----
+Currently working as a Java Developer specialized in test automation, with a strong focus on software quality and continuous integration. In parallel, I'm diving deep into the world of AI — exploring modern tools like TensorFlow, PyTorch, and Scikit-learn to build intelligent systems.
 
 ## 🚀 Projects
 
-| Project | Description | Tools |
-|--------|-------------|-------|
-| [MNIST Digit Classifier](https://github.com/MrBasM/mnist-project) | A CNN that classifies handwritten digits using TensorFlow/Keras. | `Python`, `TensorFlow`, `CNN` |
-| House Price Predictor *(Coming Soon)* | Regression model to estimate housing prices based on location & size. | `Scikit-learn`, `Pandas` |
+| Project                                                                                    | Description                              | Tools                                         |
+|:-------------------------------------------------------------------------------------------|:-----------------------------------------|:----------------------------------------------|
+| House Price Predictor *(Coming Soon)*                                                      | Predict housing prices using regression  | `Python`, TBD                                   |
+| [Heart Disease Prediction](https://github.com/MrBasM/heart-disease-project)                | Classification model using clinical data | `Python`, `Scikit-learn`, `Pandas`, `Anaconda`        |
+| [Bulldozer Price Prediction](https://github.com/MrBasM/Bulldozer-price-prediction-project) | Regression model on auction data         | `Python`, `Scikit-learn`, `Random Forest`, `Anaconda` |
+
+
+## 🔧 Learning Focus
+
+- Deep Learning (CNNs, RNNs)
+- TensorFlow & Keras
+- PyTorch
+- Model Evaluation & Deployment
+- Python, NumPy, Pandas
+
+## 📚 Courses
+
+- 🎓 [Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://zerotomastery.io/courses/machine-learning-and-data-science-bootcamp/)
+- 🎓 [TensorFlow for Deep Learning Bootcamp: Zero to Mastery](https://zerotomastery.io/courses/learn-tensorflow/)
+
+## 🌐 Website
+
+Visit the live version of this portfolio: [mrbasm.github.io](https://mrbasm.github.io)
 
 ---
 
-## 🧰 Skills In Progress
-
-- Python for Data Science
-- Machine Learning & Deep Learning
-- Neural Networks (CNNs, RNNs)
-- Model Deployment & Evaluation
-- Git & GitHub Workflows
-
----
-
-## 📚 Learning Resources
-
-- [Zero to Mastery: TensorFlow Developer](https://www.zerotomastery.io/)
-- [TensorFlow Documentation](https://www.tensorflow.org/)
-- [Scikit-learn Documentation](https://scikit-learn.org/)
-
----
-
-## 🌐 Live Portfolio
-
-🔗 View my AI portfolio website: [mrbasm.github.io](https://mrbasm.github.io)
-
----
-
-## 📫 Contact
-
-- GitHub: [github.com/MrBasM](https://github.com/MrBasM)
-- LinkedIn: [linkedin.com/in/your-link](https://linkedin.com/in/your-link)
-
----
-
-> “The best way to learn is by building. Let the journey continue!” 🚀
+> “The best way to learn is by building.”

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal AI portfolio of Mr. Bas – showcasing a learning journey in machine learning, deep learning, and practical data science projects." />
   <title>Mr. Bas | AI Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 18px;
       line-height: 1.8;
       color: #222;
       background-color: #fafafa;
       margin: 0;
       padding: 2rem;
-      max-width: 720px;
+    }
+    .content {
+      max-width: 760px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -57,92 +62,149 @@
       color: #0366d6;
     }
     hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 2.5rem 0;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .timeline {
-      border-left: 2px solid #ccc;
-      margin-left: 1rem;
-      padding-left: 1.5rem;
-    }
-    .timeline-entry {
-      margin-bottom: 1.5rem;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+      padding: 0;
+      margin: 20px 0;
+      border: 0;
+      width: 100%; max-width: 100vw;
       position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
-    .timeline-entry::before {
-      content: "";
-      position: absolute;
-      left: -1.2rem;
-      top: 0.3rem;
-      width: 10px;
-      height: 10px;
-      background-color: #0366d6;
-      border-radius: 50%;
+    .timeline-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .timeline-table td {
+      vertical-align: top;
+      padding-bottom: 2rem;
     }
     .timeline-date {
       color: #999;
       font-size: 0.9rem;
+      white-space: nowrap;
+      padding-right: 1.5rem;
+    }
+    .timeline-line {
+      position: relative;
+      width: 20px;
+    }
+    .timeline-line::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 9px;
+      width: 2px;
+      background: #ccc;
+    }
+    .timeline-circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ccc;
+      position: relative;
+      margin-top: 4px;
+      margin-left: 4px;
+    }
+    .project-list {
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+    .project-icon {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
     }
     .center {
       text-align: center;
     }
+    .full-width {
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+      padding: 0;
+      margin: 20px 0;
+      border: 0;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .logo-img {
+      border-radius: 5px;
+      width: 100%;
+      max-width: 80px;
+      margin-left: 10px;
+    }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="intro">
-    <img src="profile.jpg" alt="Mr. Bas" class="profile">
-    <div class="intro-text">
-      <h1>Mr. Bas</h1>
-      <p>Exploring intelligence through code.</p>
-      <div class="socials">
-        <a href="https://github.com/MrBasM" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/your-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <!-- Voeg meer social links toe indien gewenst -->
+  <header></header>
+  <main>
+  <div class="content">
+    <div class="intro">
+      <img src="images/profile.jpg" alt="Portrait of Mr. Bas" class="profile" />
+      <div class="intro-text">
+        <h1>Mr. Bas</h1>
+        <p>Exploring intelligence through code.</p>
+        <div class="socials">
+          <a href="https://github.com/MrBasM" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/your-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-
-  <hr>
-
-  <div class="section timeline">
-    <div class="timeline-entry">
-      <div class="timeline-date">Feb 2025</div>
-      <p>Completed the <strong>Complete A.I. Machine Learning and Data Science: Zero to Mastery</strong> course by Andrei Neagoie.</p>
-    </div>
-    <div class="timeline-entry">
-      <div class="timeline-date">2024</div>
-      <p>Started the <a href="https://www.zerotomastery.io/">Zero to Mastery TensorFlow Developer Bootcamp</a> to deepen my understanding of machine learning and deep learning.</p>
-    </div>
-    <div class="timeline-entry">
-      <div class="timeline-date">2024</div>
-      <p>Built <strong>MNIST Digit Classifier</strong>: A convolutional neural network using TensorFlow/Keras. <a href="https://github.com/MrBasM/mnist-project">[GitHub]</a></p>
-    </div>
-    <div class="timeline-entry">
-      <div class="timeline-date">Coming Soon</div>
-      <p><strong>House Price Predictor</strong>: A regression model to estimate housing prices based on multiple features.</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="section">
+    <hr class="full-width" />
+    <p>With a background as a Java Developer specializing in test automation, there's a strong foundation in software quality and continuous integration. Recently, the journey has expanded into the field of Artificial Intelligence, with a focus on Machine Learning and Deep Learning. This page serves as a personal portfolio and timeline of that ongoing learning path into AI and intelligent systems.</p>
+    <table class="timeline-table">
+      <colgroup>
+        <col style="width: 90px">
+        <col style="width: 30px">
+        <col style="width: 115px">
+        <col>
+      </colgroup>
+      <tr>
+        <td class="timeline-date">Coming Soon</td>
+        <td class="timeline-line"><div class="timeline-circle"></div></td>
+        <td></td>
+        <td><span class="project-icon">📈</span> <strong>House Price Predictor</strong>: A regression model to estimate housing prices based on multiple features.</td>
+      </tr>
+      <tr>
+        <td class="timeline-date">Feb 2025</td>
+        <td class="timeline-line"><div class="timeline-circle"></div></td>
+        <td><img src="images/ztm.png" alt="ZTM Logo" class="logo-img"></td>
+        <td>
+          <span class="project-icon">🧠</span>Started the <strong><a href="https://zerotomastery.io/courses/learn-tensorflow/">TensorFlow for Deep Learning Bootcamp: Zero to Mastery</a></strong> to deepen my understanding of machine learning and deep learning.<br>
+          ➡️ Working on this course in this repo: <a href="https://github.com/MrBasM/TensorFlow-for-Deep-Learning-Bootcamp">TensorFlow Colab Notebooks</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="timeline-date">Feb 2025</td>
+        <td class="timeline-line"><div class="timeline-circle"></div></td>
+        <td><img src="images/ztm.png" alt="ZTM Logo" class="logo-img"></td>
+        <td>
+          <span class="project-icon">🎓</span>Completed the <strong><a href="https://zerotomastery.io/courses/machine-learning-and-data-science-bootcamp/">Complete A.I. Machine Learning and Data Science: Zero to Mastery</a></strong> course by Andrei Neagoie and Daniel Bourke.
+          <ul class="project-list">
+            <li><strong>Heart Disease Prediction</strong> (classification) using Scikit-learn and Pandas – <a href="https://github.com/MrBasM/heart-disease-project">[GitHub]</a></li>
+            <li><strong>Bulldozer Price Prediction</strong> (regression) using Random Forest and feature engineering – <a href="https://github.com/MrBasM/Bulldozer-price-prediction-project">[GitHub]</a></li>
+            <li><em>Both projects were built and run in Anaconda environments.</em></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <hr class="full-width" />
     <h2>Learning Focus</h2>
     <p>
-      Deep Learning (CNNs, RNNs)<br>
-      TensorFlow & Keras<br>
-      PyTorch<br>
-      Model Evaluation & Deployment<br>
+      Deep Learning (CNNs, RNNs)<br />
+      TensorFlow & Keras<br />
+      PyTorch<br />
+      Model Evaluation & Deployment<br />
       Python, NumPy, Pandas
     </p>
+    <hr class="full-width" />
+    <p class="center"><em>“The best way to learn is by building.”</em></p>
   </div>
-
-  <hr>
-
-  <p class="center"><em>“The best way to learn is by building.”</em></p>
+  </main>
+  <footer></footer>
 </body>
 </html>
