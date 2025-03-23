@@ -158,6 +158,40 @@
     body.dark-mode .full-width {
       background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
     }
+      @media (max-width: 600px) {
+  .timeline-table colgroup col:nth-child(3) {
+    display: none;
+  }
+  .timeline-table td:nth-child(3) {
+    display: none;
+  }
+      .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .intro-text {
+        max-width: 100%;
+      }
+      .timeline-table colgroup {
+        display: none;
+      }
+      .timeline-table td {
+        display: block;
+        width: 100% !important;
+        padding-bottom: 1rem;
+      }
+      .timeline-line::before {
+        left: 10px;
+      }
+      .timeline-circle {
+        margin-left: 0;
+      }
+      .logo-img {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
   </style>
   <script>
   // Automatically apply dark mode based on system preference
@@ -223,7 +257,7 @@
           <ul class="project-list">
             <li><strong>Heart Disease Prediction</strong> (classification) using Scikit-learn and Pandas – <a href="https://github.com/MrBasM/heart-disease-project">[GitHub]</a></li>
             <li><strong>Bulldozer Price Prediction</strong> (regression) using Random Forest and feature engineering – <a href="https://github.com/MrBasM/Bulldozer-price-prediction-project">[GitHub]</a></li>
-            <li><em>Both projects were built and run in Anaconda environments.</em></li>
+            <li><strong>Dog Vision</strong>: A CNN model trained to classify dog breeds using TensorFlow and transfer learning – <a href="https://github.com/MrBasM/dog-vision">[GitHub]</a></li>
           </ul>
         </td>
       </tr>

@@ -1,3 +1,4 @@
+
 # 🧠 Mr. Bas – AI Portfolio
 
 Welcome! This site documents my personal journey into Artificial Intelligence, Machine Learning, and Deep Learning.
@@ -13,7 +14,7 @@ Currently working as a Java Developer specialized in test automation, with a str
 | House Price Predictor *(Coming Soon)*                                                      | Predict housing prices using regression  | `Python`, TBD                                   |
 | [Heart Disease Prediction](https://github.com/MrBasM/heart-disease-project)                | Classification model using clinical data | `Python`, `Scikit-learn`, `Pandas`, `Anaconda`        |
 | [Bulldozer Price Prediction](https://github.com/MrBasM/Bulldozer-price-prediction-project) | Regression model on auction data         | `Python`, `Scikit-learn`, `Random Forest`, `Anaconda` |
-
+| [Dog Vision](https://github.com/MrBasM/dog-vision) | CNN to classify dog breeds with transfer learning | `Python`, `TensorFlow`, `Keras` |
 
 ## 🔧 Learning Focus
 
