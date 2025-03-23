@@ -2,81 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mr. Bas | AI Portfolio</title>
   <style>
     body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #222;
+      background-color: #fafafa;
       margin: 0;
-      padding: 0;
-      font-family: Georgia, serif;
-      line-height: 1.6;
-      background-color: #fefefe;
-      color: #111;
-      max-width: 750px;
-      margin: auto;
       padding: 2rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    img.profile {
-      width: 160px;
-      height: 160px;
-      border-radius: 80px;
-      display: block;
-      margin: 2rem auto;
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
     }
-    h1, h2 {
-      text-align: center;
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
     }
-    a {
-      color: #0077cc;
+    .intro-text {
+      max-width: 400px;
+    }
+    .intro-text h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+    .intro-text p {
+      margin: 0.5rem 0;
+      color: #666;
+      font-style: italic;
+    }
+    .socials {
+      margin-top: 0.5rem;
+    }
+    .socials a {
+      margin: 0 0.3rem;
+      font-size: 1.3rem;
+      color: #444;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    .socials a:hover {
+      color: #0366d6;
     }
-    section {
-      margin-bottom: 2.5rem;
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2.5rem 0;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .timeline {
+      border-left: 2px solid #ccc;
+      margin-left: 1rem;
+      padding-left: 1.5rem;
+    }
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: -1.2rem;
+      top: 0.3rem;
+      width: 10px;
+      height: 10px;
+      background-color: #0366d6;
+      border-radius: 50%;
+    }
+    .timeline-date {
+      color: #999;
+      font-size: 0.9rem;
+    }
+    .center {
+      text-align: center;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <img src="profile.jpg" alt="Mr. Bas" class="profile">
-  <h1>Mr. Bas</h1>
-  <p style="text-align: center; font-size: 1.1rem;">AI & Machine Learning enthusiast – exploring intelligence through code.</p>
+  <div class="intro">
+    <img src="profile.jpg" alt="Mr. Bas" class="profile">
+    <div class="intro-text">
+      <h1>Mr. Bas</h1>
+      <p>Exploring intelligence through code.</p>
+      <div class="socials">
+        <a href="https://github.com/MrBasM" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/your-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <!-- Voeg meer social links toe indien gewenst -->
+      </div>
+    </div>
+  </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m Mr. Bas, an aspiring AI engineer diving deep into machine learning, deep learning and the craft of building intelligent systems. I'm currently studying through the <a href="https://www.zerotomastery.io/">Zero to Mastery TensorFlow Developer Bootcamp</a>.</p>
-  </section>
+  <hr>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>MNIST Digit Classifier</strong>: A CNN that classifies handwritten digits using TensorFlow/Keras. <a href="https://github.com/MrBasM/mnist-project">[GitHub]</a></li>
-      <li><strong>House Price Predictor</strong>: Regression model to estimate housing prices. *(Coming Soon)*</li>
-    </ul>
-  </section>
+  <div class="section timeline">
+    <div class="timeline-entry">
+      <div class="timeline-date">Feb 2025</div>
+      <p>Completed the <strong>Complete A.I. Machine Learning and Data Science: Zero to Mastery</strong> course by Andrei Neagoie.</p>
+    </div>
+    <div class="timeline-entry">
+      <div class="timeline-date">2024</div>
+      <p>Started the <a href="https://www.zerotomastery.io/">Zero to Mastery TensorFlow Developer Bootcamp</a> to deepen my understanding of machine learning and deep learning.</p>
+    </div>
+    <div class="timeline-entry">
+      <div class="timeline-date">2024</div>
+      <p>Built <strong>MNIST Digit Classifier</strong>: A convolutional neural network using TensorFlow/Keras. <a href="https://github.com/MrBasM/mnist-project">[GitHub]</a></p>
+    </div>
+    <div class="timeline-entry">
+      <div class="timeline-date">Coming Soon</div>
+      <p><strong>House Price Predictor</strong>: A regression model to estimate housing prices based on multiple features.</p>
+    </div>
+  </div>
 
-  <section>
-    <h2>Learning</h2>
-    <ul>
-      <li>Deep Learning with TensorFlow</li>
-      <li>Model Deployment & Evaluation</li>
-      <li>Neural Networks: CNNs, RNNs</li>
-      <li>Python, NumPy, Pandas</li>
-    </ul>
-  </section>
+  <hr>
 
-  <section>
-    <h2>Links</h2>
+  <div class="section">
+    <h2>Learning Focus</h2>
     <p>
-      GitHub: <a href="https://github.com/MrBasM">github.com/MrBasM</a><br>
-      LinkedIn: <a href="https://linkedin.com/in/basmantel">linkedin.com/in/your-link</a>
+      Deep Learning (CNNs, RNNs)<br>
+      TensorFlow & Keras<br>
+      PyTorch<br>
+      Model Evaluation & Deployment<br>
+      Python, NumPy, Pandas
     </p>
-  </section>
+  </div>
 
-  <section style="text-align:center; font-style: italic;">
-    <p>“The best way to learn is by building.”</p>
-  </section>
+  <hr>
+
+  <p class="center"><em>“The best way to learn is by building.”</em></p>
 </body>
 </html>
-
