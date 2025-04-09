@@ -26,6 +26,7 @@ Currently working as a Java Developer specialized in test automation, with a str
 
 ## 📚 Courses
 
+- 🎓 5-day Gen AI Intensive Course with Google
 - 🎓 [Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://zerotomastery.io/courses/machine-learning-and-data-science-bootcamp/)
 - 🎓 [TensorFlow for Deep Learning Bootcamp: Zero to Mastery](https://zerotomastery.io/courses/learn-tensorflow/)
 
